@@ -13,5 +13,6 @@ echo "Welcome to the PHP Home"
     <input type="text" name="username" />
     <label>Password</label>
     <input type="text" name="password" />
+    <label>New User.? <a href="register.php">Sign up</a> </label>
   </body>
 </html>
