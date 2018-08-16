@@ -2,48 +2,35 @@
   <html>
 
   <head>
-    <title>Register</title>
+    <title>Login page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-      .error{
-        font-color : red !important;
-      }
-    </style>
   </head>
 
   <body class="container">
     <div>
     <h2>
-      Register
+      Login
     </h2>
-    <form method="post" action="register.php">
+    <form  method="post" action="login.php">
       <div class="form-group">
         <label>Username</label>
         <input type="text" class="form-control" name="username" />
-      </div>
-      <div class="form-group">
-        <label>Email</label>
-        <input type="text" class="form-control" name="email" />
       </div>
       <div class="form-group">
         <label>Password</label>
         <input type="password" class="form-control" name="password" />
       </div>
       <div class="form-group">
-        <label>Confirm Password</label>
-        <input type="password" class="form-control" name="password1" />
+        <label>New User.? <a href="register.php">Sign up</a> </label>
       </div>
       <div>
-        <label>Already a User? <a href="login.php">Sign in</a> </label>
+       <?php include("errors.php") ?>
       </div>
-      <div>
-        <?php include("errors.php") ?>
-      </div>
-      <button type="submit" name="reg_user" class="btn">
-        Sign up
+      <button type="submit" name="login" class="btn">
+        Sign in
       </button>
     </form>
       
